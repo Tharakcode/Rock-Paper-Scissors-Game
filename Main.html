@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rock Paper Scissors Game</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>Rock Paper Scissors</h1>
+
+    <button onclick="playGame('rock'); toggle('.js-button1') " class="playerButton js-button1"><img src="images/rock-emoji.png" alt="Rock" class=" playerIcon"></button>
+
+    <button onclick="playGame('paper'); toggle('.js-button2')" class="playerButton js-button2"><img src="images/paper-emoji.png" alt="Paper" class=" playerIcon"></button>
+
+    <button onclick="playGame('scissors'); toggle('.js-button3') " class="playerButton js-button3"><img src="images/scissors-emoji.png" alt="Scissors" class=" playerIcon"></button>
+    
+    <p class="js-result"></p>
+    <p class="js-bothMove"></p>
+    <p class="js-score"></p>
+    
+    <button onclick="
+    scores.win = 0;
+    scores.lose = 0;
+    scores.Tie = 0
+    showScore(); toggle('.jsbutton')" class="playerReset jsbutton" >Reset Score</button>
+
+    <button class="css-autoplay js-button-4" onclick="autoplay();">Auto Play is OFF</button>
+
+    <script src="Script.js" defer></script>
+</body>            
+</html>
